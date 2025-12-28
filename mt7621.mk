@@ -1904,6 +1904,7 @@ define Device/xiaomi_mi-router-cr660x
 	check-size
   DEVICE_VENDOR := Xiaomi
   DEVICE_MODEL := Mi Router CR660x
+  DEVICE_DTS := mt7621_xiaomi_mi-router-cr6606
   DEVICE_PACKAGES += kmod-mt7915-firmware wpad-openssl uboot-envtools
   SUPPORTED_DEVICES += xiaomi,mi-router-cr6606
 endef
