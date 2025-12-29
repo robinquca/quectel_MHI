@@ -23,13 +23,14 @@
 	};
 
     usb_vbus: usb-vbus {
-		compatible = "regulator-fixed";
-		regulator-name = "usb-vbus";
-		regulator-min-microvolt = <5000000>;
-		regulator-max-microvolt = <5000000>;
-		gpio = <&gpio 6 GPIO_ACTIVE_HIGH>;
-		enable-active-high;
-	};
+        compatible = "regulator-fixed";
+        regulator-name = "usb-vbus";
+        regulator-min-microvolt = <5000000>;
+        regulator-max-microvolt = <5000000>;
+        gpio = <&gpio 6 GPIO_ACTIVE_HIGH>;
+        enable-active-high;
+        startup-delay-ms = <4000>;
+    };
 
 	leds {
 		compatible = "gpio-leds";
