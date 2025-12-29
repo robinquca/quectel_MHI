@@ -1906,7 +1906,7 @@ define Device/xiaomi_mi-router-cr6606
   DEVICE_MODEL := Mi Router CR6606
   DEVICE_DTS := mt7621_xiaomi_mi-router-cr6606
   DEVICE_PACKAGES += kmod-mt7915-firmware wpad-openssl uboot-envtools
-  SUPPORTED_DEVICES += xiaomi_mi-router-cr6606
+  SUPPORTED_DEVICES += xiaomi,mi-router-cr6606
 endef
 TARGET_DEVICES += xiaomi_mi-router-cr6606
 
