@@ -1890,7 +1890,7 @@ define Device/xiaomi_mi-router-ac2100
 endef
 TARGET_DEVICES += xiaomi_mi-router-ac2100
 
-define Device/xiaomi_mi-router-cr660x
+define Device/xiaomi_mi-router-cr6606
   $(Device/dsa-migration)
   $(Device/uimage-lzma-loader)
   BLOCKSIZE := 128k
@@ -1903,12 +1903,12 @@ define Device/xiaomi_mi-router-cr660x
   IMAGE/factory.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-ubi | \
 	check-size
   DEVICE_VENDOR := Xiaomi
-  DEVICE_MODEL := Mi Router CR660x
+  DEVICE_MODEL := Mi Router CR6606
   DEVICE_DTS := mt7621_xiaomi_mi-router-cr6606
   DEVICE_PACKAGES += kmod-mt7915-firmware wpad-openssl uboot-envtools
   SUPPORTED_DEVICES += xiaomi,mi-router-cr6606
 endef
-TARGET_DEVICES += xiaomi_mi-router-cr660x
+TARGET_DEVICES += xiaomi_mi-router-cr6606
 
 define Device/xiaomi_redmi-router-ac2100
   $(Device/xiaomi_nand_separate)
